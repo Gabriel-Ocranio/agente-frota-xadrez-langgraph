@@ -1,0 +1,76 @@
+{
+  "pecas": [
+    {
+      "nome": "Rei",
+      "simbolo": "K",
+      "quantidade": 1,
+      "movimento": "Uma casa em qualquer direção: horizontal, vertical ou diagonal.",
+      "captura": "Captura uma peça adversária em uma casa adjacente.",
+      "restricoes": [
+        "Não pode se mover para uma casa ameaçada por uma peça adversária.",
+        "Não pode ficar em xeque.",
+        "Pode realizar o roque sob condições específicas."
+      ]
+    },
+    {
+      "nome": "Rainha",
+      "simbolo": "Q",
+      "quantidade": 1,
+      "movimento": "Qualquer quantidade de casas na horizontal, vertical ou diagonal.",
+      "captura": "Captura qualquer peça adversária que esteja no caminho permitido.",
+      "restricoes": [
+        "Não pode saltar sobre outras peças."
+      ]
+    },
+    {
+      "nome": "Torre",
+      "simbolo": "R",
+      "quantidade": 2,
+      "movimento": "Qualquer quantidade de casas na horizontal ou vertical.",
+      "captura": "Captura peças adversárias que estejam na mesma linha ou coluna.",
+      "restricoes": [
+        "Não pode saltar sobre outras peças."
+      ]
+    },
+    {
+      "nome": "Bispo",
+      "simbolo": "B",
+      "quantidade": 2,
+      "movimento": "Qualquer quantidade de casas na diagonal.",
+      "captura": "Captura peças adversárias que estejam na mesma diagonal.",
+      "restricoes": [
+        "Não pode saltar sobre outras peças.",
+        "Permanece sempre nas casas da mesma cor."
+      ]
+    },
+    {
+      "nome": "Cavalo",
+      "simbolo": "N",
+      "quantidade": 2,
+      "movimento": "Move-se em formato de L: duas casas em uma direção e uma casa perpendicularmente.",
+      "captura": "Captura a peça adversária localizada na casa de destino.",
+      "restricoes": [
+        "Pode saltar sobre outras peças.",
+        "É a única peça que pode saltar sobre outras peças."
+      ]
+    },
+    {
+      "nome": "Peão",
+      "simbolo": "P",
+      "quantidade": 8,
+      "movimento": "Avança uma casa para frente. No primeiro movimento, pode avançar duas casas.",
+      "captura": "Captura uma casa na diagonal para frente.",
+      "restricoes": [
+        "Não pode andar para trás.",
+        "Não captura peças diretamente à frente.",
+        "Pode realizar en passant.",
+        "Ao alcançar a última fileira, deve ser promovido a outra peça, geralmente uma rainha."
+      ]
+    }
+  ],
+  "regras_especiais": {
+    "roque": "Movimento especial envolvendo o rei e uma torre.",
+    "en_passant": "Captura especial realizada por um peão contra outro peão que acabou de avançar duas casas.",
+    "promocao": "Um peão que alcança a última fileira é promovido a rainha, torre, bispo ou cavalo."
+  }
+}
